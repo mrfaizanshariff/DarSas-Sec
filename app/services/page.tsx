@@ -8,9 +8,9 @@ import { Button } from '@/components/ui/button';
 const services = [
   {
     icon: Lock,
-    title: 'Physical Security',
+    title: 'Digital Security',
     description: 'Professional security guards and patrol services for your premises.',
-    link: '/services/physical-security',
+    link: '/services/Digital-security',
     color: 'from-red-500/20 to-orange-500/20'
   },
   {
@@ -69,7 +69,7 @@ export default function ServicesPage() {
               <span className="text-gradient animate-glow">Solutions</span>
             </h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              From physical security to advanced surveillance systems, we provide end-to-end security solutions tailored to your needs.
+              From Digital security to advanced surveillance systems, we provide end-to-end security solutions tailored to your needs.
             </p>
           </div>
         </div>

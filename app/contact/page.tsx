@@ -103,7 +103,7 @@ export default function ContactPage() {
                   icon: MapPin,
                   title: 'Address',
                   content: 'Prince Abdulaziz Ibn Musaid Ibn Jalawi St, Al Murabba, Riyadh',
-                  href: '#'
+                  href: 'https://www.google.com/maps?ll=24.66078,46.709772&z=15&t=m&hl=en&gl=US&mapclient=embed&q=24%C2%B039%2738.8%22N+46%C2%B042%2735.2%22E+24.660778,+46.709778@24.6607778,46.7097778'
                 }
               ].map((item, index) => (
                 <a

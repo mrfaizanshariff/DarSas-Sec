@@ -24,7 +24,7 @@ export function Navbar() {
       href: '/services',
       hasDropdown: true,
       dropdownItems: [
-        { name: 'Physical Security', href: '/services/physical-security' },
+        { name: 'Digital Security', href: '/services/Digital-security' },
         { name: 'Corporate Security', href: '/services/corporate-security' },
         { name: 'VIP Protection', href: '/services/vip-protection' },
         { name: 'Event Security', href: '/services/event-security' },
@@ -44,7 +44,7 @@ export function Navbar() {
             <Link href="/" className="flex items-center space-x-2">
               <Shield className={`h-8 w-8 ${isScrolled ? 'text-[#eb4034]' : 'text-white'}`} />
               <span className={`font-bold text-xl ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-                Darsas
+                Dar Sas
               </span>
             </Link>
           </div>

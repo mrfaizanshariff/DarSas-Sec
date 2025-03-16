@@ -38,7 +38,9 @@ export default function Home() {
                 size="lg" 
                 className="hover-scale bg-[#eb4034] hover:bg-[#d63027] text-white text-lg px-8 py-6 rounded-full"
               >
+                <Link href="/contact">
                 Get Started
+                </Link>
                 <ChevronRight className="ml-2 h-5 w-5" />
               </Button>
               <Button 
@@ -93,8 +95,8 @@ export default function Home() {
             {[
               {
                 icon: Lock,
-                title: 'Physical Security',
-                description: 'Professional security guards and patrol services for your premises.',
+                title: 'Digital Security',
+                description: 'Dar SAS provides comprehensive solutions to streamline the management and security of home and commercial properties.',
               },
               {
                 icon: Building,
@@ -139,7 +141,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="animate-slide-up">
               <h2 className="text-4xl font-bold text-white mb-6 text-glow">
-                Why Choose Darsas Security?
+                Why Choose Dar Sas Security?
               </h2>
               <p className="text-xl text-gray-400 mb-12">
                 We combine advanced technology with professional expertise to deliver unmatched security services.
@@ -164,7 +166,7 @@ export default function Home() {
                   {
                     icon: Award,
                     title: 'Certified Quality',
-                    description: 'ISO certified security services and training',
+                    description: 'D.U.N.S registered and ISO certified security services and training',
                   },
                 ].map((feature, index) => (
                   <div key={index} className="hover-lift card-gradient rounded-xl p-6 card-border">
@@ -205,7 +207,9 @@ export default function Home() {
               size="lg" 
               className="hover-scale bg-white text-[#eb4034] hover:bg-gray-100 text-lg px-8 py-6 rounded-full"
             >
+              <Link href="/contact">
               Get Your Free Consultation
+              </Link>
               <ChevronRight className="ml-2 h-5 w-5" />
             </Button>
           </div>

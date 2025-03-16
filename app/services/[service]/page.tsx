@@ -6,8 +6,8 @@ import { CircuitLines } from '@/components/circuit-lines';
 import { notFound } from 'next/navigation';
 
 const services = {
-  'physical-security': {
-    title: 'Physical Security',
+  'Digital-security': {
+    title: 'Digital Security',
     description: 'Professional security guards and patrol services.',
     image: 'https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&q=80',
     features: [
@@ -63,7 +63,7 @@ const services = {
       'Peace of mind'
     ]
   },
-  'surveillance-systems': {
+  'surveillance': {
     title: 'Surveillance Systems',
     description: 'Advanced CCTV and monitoring solutions.',
     image: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&q=80',

@@ -29,10 +29,10 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><Link href="/services/physical-security" className="text-gray-400 hover:text-white">Physical Security</Link></li>
+              <li><Link href="/services/Digital-security" className="text-gray-400 hover:text-white">Digital Security</Link></li>
               <li><Link href="/services/event-security" className="text-gray-400 hover:text-white">Event Security</Link></li>
               <li><Link href="/services/surveillance" className="text-gray-400 hover:text-white">Surveillance</Link></li>
-              <li><Link href="/services/consulting" className="text-gray-400 hover:text-white">Security Consulting</Link></li>
+              <li><Link href="/services/security-consulting" className="text-gray-400 hover:text-white">Security Consulting</Link></li>
             </ul>
           </div>
           
@@ -48,7 +48,7 @@ export function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Darsas Security Services. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Dar Sas Security Services. All rights reserved.</p>
         </div>
       </div>
     </footer>
