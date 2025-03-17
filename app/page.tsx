@@ -68,7 +68,7 @@ export default function Home() {
               { number: '500+', label: 'Clients Protected' },
               { number: '1000+', label: 'Security Staff' },
               { number: '24/7', label: 'Monitoring' },
-              { number: '15+', label: 'Years Experience' },
+              { number: '30+', label: 'Years Experience' },
             ].map((stat, index) => (
               <div key={index} className="hover-lift card-gradient rounded-2xl p-8 card-border">
                 <div className="text-4xl font-bold text-[#eb4034] mb-2 text-glow">{stat.number}</div>

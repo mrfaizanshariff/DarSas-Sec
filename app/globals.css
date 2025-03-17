@@ -16,6 +16,31 @@
   }
 }
 
+/* RTL Support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .flex-row {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .space-x-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -154,7 +179,7 @@
 
 @keyframes glow {
   0%, 100% {
-    filter: drop-shadow(0 0 15px rgba(247, 55, 42, 0.3));
+    filter: drop-shadow(0 0 15px rgba(235, 64, 52, 0.3));
   }
   50% {
     filter: drop-shadow(0 0 30px rgba(235, 64, 52, 0.6));

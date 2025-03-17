@@ -1,7 +1,13 @@
+
+'use client'
+import { useLanguage } from '@/context/languageContext';
 import { Shield } from 'lucide-react';
 import Link from 'next/link';
 
 export function Footer() {
+  const { t } = useLanguage();
+// Then use it like:
+
   return (
     <footer className="bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -17,7 +23,7 @@ export function Footer() {
           </div>
           
           <div>
-            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-lg mb-4">{t("footer.quickLinks")}</h3>
             <ul className="space-y-2">
               <li><Link href="/about" className="text-gray-400 hover:text-white">About Us</Link></li>
               <li><Link href="/services" className="text-gray-400 hover:text-white">Services</Link></li>
@@ -39,8 +45,8 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>123 Security Street</li>
-              <li>Riyadh, Saudi Arabia</li>
+              <li>Prince Abdulaziz Ibn Musaid Ibn Jalawi St</li>
+              <li>Al Murabba, Riyadh, Saudi Arabia</li>
               <li>Phone: +966 123 456 789</li>
               <li>Email: info@darsas.sa</li>
             </ul>

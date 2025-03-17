@@ -2,12 +2,14 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Shield, Menu, X, ChevronDown } from 'lucide-react';
+import { Shield, Menu, X, ChevronDown,Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/context/languageContext';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,21 +21,24 @@ export function Navbar() {
   }, []);
 
   const navItems = [
+   
     { 
-      name: 'Services',
+      name: t("nav.services"),
       href: '/services',
       hasDropdown: true,
       dropdownItems: [
-        { name: 'Digital Security', href: '/services/Digital-security' },
-        { name: 'Corporate Security', href: '/services/corporate-security' },
-        { name: 'VIP Protection', href: '/services/vip-protection' },
-        { name: 'Event Security', href: '/services/event-security' },
+        { name: t("nav.services.1"), href: '/services/Digital-security' },
+        { name: t("nav.services.2"), href: '/services/corporate-security' },
+        { name: t("nav.services.3"), href: '/services/vip-protection' },
+        { name: t("nav.services.4"), href: '/services/event-security' },
       ]
     },
-    { name: 'About', href: '/about', hasDropdown: false },
-    { name: 'Contact', href: '/contact', hasDropdown: false },
+    { name: t("nav.about"), href: '/about', hasDropdown: false },
+    { name: t("nav.contact"), href: '/contact', hasDropdown: false },
   ];
-
+  const toggleLanguage = () => {
+    setLanguage(language === 'en' ? 'ar' : 'en');
+  };
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
@@ -44,7 +49,7 @@ export function Navbar() {
             <Link href="/" className="flex items-center space-x-2">
               <Shield className={`h-8 w-8 ${isScrolled ? 'text-[#eb4034]' : 'text-white'}`} />
               <span className={`font-bold text-xl ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-                Dar Sas
+                {t('nav.logo')}
               </span>
             </Link>
           </div>
@@ -87,13 +92,35 @@ export function Navbar() {
                     : 'bg-white text-[#eb4034] hover:bg-gray-100'
                 }`}
               >
-                Get Started
+                {t('nav.getStarted')}
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={toggleLanguage}
+                className={`${
+                  isScrolled ? 'text-gray-900' : 'text-white'
+                } hover:text-[#eb4034]`}
+              >
+                <Globe className="h-5 w-5" />
+                <span className="ml-2">{language.toUpperCase()}</span>
               </Button>
             </div>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
+          <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleLanguage}
+              className={`${
+                isScrolled ? 'text-gray-900' : 'text-white'
+              } hover:text-[#eb4034]`}
+            >
+              <Globe className="h-5 w-5" />
+              <span className="ml-2">{language.toUpperCase()}</span>
+            </Button>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`inline-flex items-center justify-center p-2 rounded-md ${

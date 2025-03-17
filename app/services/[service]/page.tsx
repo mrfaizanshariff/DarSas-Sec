@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { RadarAnimation } from '@/components/radar-animation';
 import { CircuitLines } from '@/components/circuit-lines';
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 
 const services = {
   'Digital-security': {
@@ -233,7 +234,9 @@ export default function ServicePage({ params }: { params: { service: string } })
                 size="lg"
                 className="bg-[#eb4034] hover:bg-[#d63027] text-white text-lg px-8 py-6 rounded-full hover-scale"
               >
+                <Link href="/contact">
                 Contact Us
+                </Link>
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>

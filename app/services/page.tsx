@@ -122,7 +122,9 @@ export default function ServicesPage() {
                   size="lg"
                   className="bg-[#eb4034] hover:bg-[#d63027] text-white text-lg px-8 py-6 rounded-full hover-scale"
                 >
+                  <Link href="/contact">
                   Get Free Consultation
+                  </Link>
                 </Button>
               </div>
             </div>
