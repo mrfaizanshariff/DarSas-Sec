@@ -35,6 +35,7 @@ export function Navbar() {
     },
     { name:"About", href: '/about', hasDropdown: false },
     { name: "Contact", href: '/contact', hasDropdown: false },
+    { name: "Careers", href: '/careers', hasDropdown: false },
   ];
   const toggleLanguage = () => {
     setLanguage(language === 'en' ? 'ar' : 'en');
