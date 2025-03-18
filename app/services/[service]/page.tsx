@@ -7,8 +7,8 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 
 const services = {
-  'Digital-security': {
-    title: 'Digital Security',
+  'guarding-services': {
+    title: 'Guarding Services',
     description: 'Professional security guards and patrol services.',
     image: 'https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&q=80',
     features: [
@@ -26,8 +26,8 @@ const services = {
       'Professional security presence'
     ]
   },
-  'corporate-security': {
-    title: 'Corporate Security',
+  'digital-physical-security': {
+    title: 'Digital/Physical Security',
     description: 'Comprehensive security solutions for businesses.',
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80',
     features: [
@@ -45,65 +45,9 @@ const services = {
       'Business continuity'
     ]
   },
-  'vip-protection': {
-    title: 'VIP Protection',
-    description: 'Personal security and close protection services.',
-    image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80',
-    features: [
-      'Close protection officers',
-      'Route planning',
-      'Threat assessment',
-      'Secure transportation',
-      'Event security',
-      'Privacy protection'
-    ],
-    benefits: [
-      'Personal safety assurance',
-      'Privacy maintenance',
-      'Professional discretion',
-      'Peace of mind'
-    ]
-  },
-  'surveillance': {
-    title: 'Surveillance Systems',
-    description: 'Advanced CCTV and monitoring solutions.',
-    image: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&q=80',
-    features: [
-      'HD CCTV systems',
-      'Remote monitoring',
-      'Video analytics',
-      'Cloud storage',
-      'Mobile access',
-      'Intrusion detection'
-    ],
-    benefits: [
-      '24/7 visual security',
-      'Incident documentation',
-      'Remote accessibility',
-      'Deterrent presence'
-    ]
-  },
-  'event-security': {
-    title: 'Event Security',
-    description: 'Specialized security for events and gatherings.',
-    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80',
-    features: [
-      'Crowd control',
-      'Access management',
-      'Emergency planning',
-      'VIP protection',
-      'Security screening',
-      'Command center'
-    ],
-    benefits: [
-      'Safe event environment',
-      'Crowd management',
-      'Emergency readiness',
-      'Guest safety'
-    ]
-  },
-  'security-consulting': {
-    title: 'Security Consulting',
+
+  'security-consultation': {
+    title: 'Protective Security & Consultation',
     description: 'Expert security planning and strategy.',
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80',
     features: [

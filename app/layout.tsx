@@ -4,12 +4,14 @@ import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
-import { LanguageProvider } from '@/context/languageContext';
+import { LanguageProvider } from '@/context/LanguageContext';
+import favicon from '../assets/favicon.ico';
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Darsas Security Services',
+  title: 'Dar Sas Security Services',
   description: 'Professional security services provider offering comprehensive protection solutions for businesses and individuals.',
 };
 
@@ -20,6 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"

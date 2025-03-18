@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Shield, Menu, X, ChevronDown,Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useLanguage } from '@/context/languageContext';
+import { useLanguage } from '@/context/LanguageContext';
+import Logo from '../assets/Logo.png';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,33 +24,32 @@ export function Navbar() {
   const navItems = [
    
     { 
-      name: t("nav.services"),
+      name: "Services",
       href: '/services',
       hasDropdown: true,
       dropdownItems: [
-        { name: t("nav.services.1"), href: '/services/Digital-security' },
-        { name: t("nav.services.2"), href: '/services/corporate-security' },
-        { name: t("nav.services.3"), href: '/services/vip-protection' },
-        { name: t("nav.services.4"), href: '/services/event-security' },
+        { name: "Guarding Services", href: '/services/guarding-services' },
+        { name:"Digital/Physical Security", href: '/services/digital-physical-security' },
+        { name: "Protective Security & Consultation", href: '/services/security-consultation' }
       ]
     },
-    { name: t("nav.about"), href: '/about', hasDropdown: false },
-    { name: t("nav.contact"), href: '/contact', hasDropdown: false },
+    { name:"About", href: '/about', hasDropdown: false },
+    { name: "Contact", href: '/contact', hasDropdown: false },
   ];
   const toggleLanguage = () => {
     setLanguage(language === 'en' ? 'ar' : 'en');
   };
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+      isScrolled ? 'bg-[#421b1b] shadow-md' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <Shield className={`h-8 w-8 ${isScrolled ? 'text-[#eb4034]' : 'text-white'}`} />
-              <span className={`font-bold text-xl ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-                {t('nav.logo')}
+              {/* <Shield className={`h-8 w-8 ${isScrolled ? 'text-[#eb4034]' : 'text-white'}`} /> */}
+              <span className={`font-bold text-xl text-white`}>
+                <img className='h-14 w-14' src={Logo.src} alt="Dar Sas" />
               </span>
             </Link>
           </div>
@@ -61,9 +61,7 @@ export function Navbar() {
                 <div key={item.name} className="relative group">
                   <Link
                     href={item.href}
-                    className={`flex items-center space-x-1 ${
-                      isScrolled ? 'text-gray-900' : 'text-white'
-                    } hover:text-[#eb4034] px-3 py-2 text-sm font-medium transition-colors`}
+                    className={`flex items-center space-x-1  hover:text-[#eb4034] text-white px-3 py-2 text-sm font-medium transition-colors`}
                   >
                     <span>{item.name}</span>
                     {item.hasDropdown && <ChevronDown className="h-4 w-4" />}
@@ -92,40 +90,34 @@ export function Navbar() {
                     : 'bg-white text-[#eb4034] hover:bg-gray-100'
                 }`}
               >
-                {t('nav.getStarted')}
+               Get Started
               </Button>
-              <Button
+              {/* <Button
                 variant="ghost"
                 size="icon"
                 onClick={toggleLanguage}
-                className={`${
-                  isScrolled ? 'text-gray-900' : 'text-white'
-                } hover:text-[#eb4034]`}
+                className={`text-white hover:text-[#eb4034]`}
               >
                 <Globe className="h-5 w-5" />
                 <span className="ml-2">{language.toUpperCase()}</span>
-              </Button>
+              </Button> */}
             </div>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-          <Button
+          {/* <Button
               variant="ghost"
               size="icon"
               onClick={toggleLanguage}
-              className={`${
-                isScrolled ? 'text-gray-900' : 'text-white'
-              } hover:text-[#eb4034]`}
+              className={`text-white hover:text-[#eb4034]`}
             >
               <Globe className="h-5 w-5" />
               <span className="ml-2">{language.toUpperCase()}</span>
-            </Button>
+            </Button> */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`inline-flex items-center justify-center p-2 rounded-md ${
-                isScrolled ? 'text-gray-900' : 'text-white'
-              } hover:text-[#eb4034]`}
+              className={`inline-flex items-center justify-center p-2 rounded-md text-white hover:text-[#eb4034]`}
             >
               {isOpen ? (
                 <X className="block h-6 w-6" />

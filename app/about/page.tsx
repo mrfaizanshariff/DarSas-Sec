@@ -1,6 +1,6 @@
 'use client';
 
-import { Shield, Users, Award, Clock } from 'lucide-react';
+import { Shield, Users, Award, Clock,BookCheck, BadgeCheck, BrainCircuit, Atom } from 'lucide-react';
 import { InfiniteLogoSlider } from '@/components/infinite-logo-slider';
 
 export default function AboutPage() {
@@ -36,13 +36,13 @@ export default function AboutPage() {
             <div className="hover-lift card-gradient rounded-2xl p-8 card-border">
               <h2 className="text-3xl font-bold text-white mb-6">Our Mission</h2>
               <p className="text-gray-400 text-lg leading-relaxed">
-                To provide unparalleled security services that safeguard our clients' assets, people, and peace of mind through innovative solutions and unwavering professionalism.
+              To safeguard our clients' people, assets, and operations by delivering customized, cutting-edge security solutions that combine human expertise with advanced technology.
               </p>
             </div>
             <div className="hover-lift card-gradient rounded-2xl p-8 card-border">
               <h2 className="text-3xl font-bold text-white mb-6">Our Vision</h2>
               <p className="text-gray-400 text-lg leading-relaxed">
-                To be the most trusted name in security services across the Middle East, setting new standards for excellence and reliability in the industry.
+              To be the leading integrated security solutions provider in the region, setting industry standards through innovation and excellence.
               </p>
             </div>
           </div>
@@ -90,21 +90,21 @@ export default function AboutPage() {
       <section className="py-24 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-4">Our Journey</h2>
-            <p className="text-gray-400 text-lg">
+            <h2 className="text-3xl font-bold text-white mb-4">Core Values</h2>
+            {/* <p className="text-gray-400 text-lg">
               A timeline of our growth and achievements
-            </p>
+            </p> */}
           </div>
           <div className="space-y-8">
             {[
-              { year: '1995', title: 'Foundation', description: 'Darsas Security Services was established in Riyadh' },
-              { year: '2005', title: 'Expansion', description: 'Opened branches in major Saudi cities' },
-              { year: '2015', title: 'Innovation', description: 'Launched state-of-the-art monitoring center' },
-              { year: '2023', title: 'Leadership', description: 'Became the leading security provider in Saudi Arabia' },
+              { icon: BookCheck, title: 'Integrity', description: 'Maintaining the highest ethical standards in all our operations and client relationships.' },
+              { icon: BadgeCheck, title: 'Reliability', description: 'Providing dependable security services that our clients can trust at all times.' },
+              { icon: BrainCircuit, title: 'Excellence', description: 'Continuously striving to exceed expectations through superior service delivery and innovative solutions.' },
+              { icon: Atom, title: 'Innovation', description: 'Embracing technological advancements to enhance our security capabilities and client offerings.' },
             ].map((item, index) => (
-              <div key={index} className="flex items-start space-x-8">
+              <div key={index} className="flex items-center space-x-8">
                 <div className="flex-shrink-0 w-24">
-                  <div className="text-[#eb4034] font-bold text-xl">{item.year}</div>
+                <item.icon className="h-12 w-12 text-[#eb4034] mb-4 animate-glow" />
                 </div>
                 <div className="flex-grow hover-lift card-gradient rounded-2xl p-8 card-border">
                   <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>

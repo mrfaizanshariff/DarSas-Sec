@@ -1,4 +1,4 @@
-import { Shield, Users, Clock, Award, ChevronRight, Lock, Building, UserCheck, ArrowRight } from 'lucide-react';
+import { Shield, Users, Clock, Award, ChevronRight, Lock, Building, UserCheck, ArrowRight, Smile, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -95,18 +95,24 @@ export default function Home() {
             {[
               {
                 icon: Lock,
-                title: 'Digital Security',
-                description: 'Dar SAS provides comprehensive solutions to streamline the management and security of home and commercial properties.',
+                title: 'Guarding Services',
+    link: '/services/guarding-services',
+
+                description: 'Tech-enabled security personnel providing real-time threat detection and rapid response capabilities.',
               },
               {
                 icon: Building,
-                title: 'Corporate Security',
-                description: 'Tailored security solutions for businesses and organizations.',
+                title: 'Digital/Physical Security',
+    link: '/services/digital-physical-security',
+
+                description: 'Integrated technology solutions that prevent threats and maximize operational efficiency.',
               },
               {
                 icon: UserCheck,
-                title: 'VIP Protection',
-                description: 'Personal security and close protection services.',
+                title: 'Protective Security & Consultation',
+    link: '/services/security-consultation',
+
+                description: 'Expert consultation and protection services to build organizational resilience and compliant.',
               },
             ].map((service, index) => (
               <div
@@ -120,7 +126,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
                 <p className="text-gray-400 mb-6">{service.description}</p>
                 <Link
-                  href={`/services/${service.title.toLowerCase().replace(' ', '-')}`}
+                  href={service.link}
                   className="inline-flex items-center text-[#eb4034] font-semibold group-hover:translate-x-2 transition-transform duration-300"
                 >
                   Learn More
@@ -150,23 +156,23 @@ export default function Home() {
                 {[
                   {
                     icon: Shield,
-                    title: 'Advanced Security',
-                    description: 'State-of-the-art security systems and protocols',
+                    title: 'Strong Group Backing',
+                    description: 'Leveraged by Mawarid Holding Group, providing unparalleled strength in manpower resources, cutting-edge technology, and robust financial capabilities.',
                   },
                   {
                     icon: Users,
-                    title: 'Expert Team',
-                    description: 'Highly trained and certified security professionals',
+                    title: 'Expert Human Capital',
+                    description: 'Our team combines with extensive expertise in specialized security management across all disciplines, ensuring sophisticated solution delivery',
                   },
                   {
-                    icon: Clock,
-                    title: '24/7 Support',
-                    description: 'Round-the-clock monitoring and rapid response',
+                    icon: MapPin,
+                    title: 'Nationwide Coverage',
+                    description: 'Strategic operational presence throughout all regions of Saudi Arabia with rapid deployment and mobilization capabilities to respond to your Digital and in person security needs.',
                   },
                   {
-                    icon: Award,
-                    title: 'Certified Quality',
-                    description: 'D.U.N.S registered and ISO certified security services and training',
+                    icon: Smile,
+                    title: 'Client Satisfaction',
+                    description: 'We define our success through exceptional client satisfaction metrics, considering your continued loyalty and partnership our greatest achievement and benchmark.',
                   },
                 ].map((feature, index) => (
                   <div key={index} className="hover-lift card-gradient rounded-xl p-6 card-border">

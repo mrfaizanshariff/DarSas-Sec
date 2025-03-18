@@ -8,46 +8,26 @@ import { Button } from '@/components/ui/button';
 const services = [
   {
     icon: Lock,
-    title: 'Digital Security',
-    description: 'Professional security guards and patrol services for your premises.',
-    link: '/services/Digital-security',
+    title: 'Guarding Services',
+    description: 'Tech-enabled security personnel providing real-time threat detection and rapid response capabilities.',
+    link: '/services/guarding-services',
     color: 'from-red-500/20 to-orange-500/20'
   },
   {
     icon: Building,
-    title: 'Corporate Security',
-    description: 'Comprehensive security solutions for businesses and organizations.',
-    link: '/services/corporate-security',
+    title: 'Digital/Physical Security',
+    description: 'Integrated technology solutions that prevent threats and maximize operational efficiency.',
+    link: '/services/digital-physical-security',
     color: 'from-blue-500/20 to-purple-500/20'
   },
   {
     icon: UserCheck,
-    title: 'VIP Protection',
-    description: 'Personal security and close protection services for individuals.',
-    link: '/services/vip-protection',
+    title: 'Protective Security & Consultation',
+    description: 'Expert consultation and protection services to build organizational resilience and compliant.',
+    link: '/services/security-consultation',
     color: 'from-green-500/20 to-emerald-500/20'
   },
-  {
-    icon: Camera,
-    title: 'Surveillance Systems',
-    description: 'Advanced CCTV and monitoring solutions for complete coverage.',
-    link: '/services/surveillance-systems',
-    color: 'from-yellow-500/20 to-amber-500/20'
-  },
-  {
-    icon: Bell,
-    title: 'Event Security',
-    description: 'Specialized security services for events and gatherings.',
-    link: '/services/event-security',
-    color: 'from-pink-500/20 to-rose-500/20'
-  },
-  {
-    icon: Brain,
-    title: 'Security Consulting',
-    description: 'Expert advice and strategic planning for security needs.',
-    link: '/services/security-consulting',
-    color: 'from-indigo-500/20 to-violet-500/20'
-  }
+
 ];
 
 export default function ServicesPage() {
@@ -69,7 +49,7 @@ export default function ServicesPage() {
               <span className="text-gradient animate-glow">Solutions</span>
             </h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              From Digital security to advanced surveillance systems, we provide end-to-end security solutions tailored to your needs.
+              From Guarding Services to advanced surveillance systems, we provide end-to-end security solutions tailored to your needs.
             </p>
           </div>
         </div>
