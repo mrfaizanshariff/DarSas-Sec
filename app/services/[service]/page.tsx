@@ -6,11 +6,13 @@ import { CircuitLines } from '@/components/circuit-lines';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import cctv from '../../../assets/cctv.png'
+import consulting from '../../../assets/consulting.png'
+import guarding from '../../../assets/guarding.png'
 const services = {
   'guarding-services': {
     title: 'Guarding Services',
     description: 'Our digitized guard services represent the seamless integration of elite human expertise with state-of-the-art security technology. We deploy meticulously trained security professionals equipped with advanced digital tools that dramatically enhance monitoring capabilities, facilitate instant communication, and enable sophisticated incident response protocols tailored to your specific security requirements.',
-    image: cctv.src,
+    image: guarding.src,
     features: [
       'Trained security personnel',
       '24/7 patrol services',
@@ -49,7 +51,7 @@ const services = {
   'security-consultation': {
     title: 'Protective Security & Consultation',
     description: 'Our consulting services provide strategic expertise to address complex security challenges. We develop customized security policies, manage high-profile events, deliver specialized training, and implement tailored technology solutions.',
-    image: cctv.src,
+    image: consulting.src,
     features: [
       'Policy Development',
       'Access Control',
@@ -107,7 +109,7 @@ export default function ServicePage({ params }: { params: { service: string } })
       {/* Features Section */}
       <section className="py-24 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <h2 className="text-3xl font-bold text-white mb-8">Key Features</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

@@ -145,7 +145,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-br from-[#eb4034]/10 to-transparent" />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-end">
             <div className="animate-slide-up">
               <h2 className="text-4xl font-bold text-white mb-6 text-glow">
                 Why Choose Dar Sas Security?
