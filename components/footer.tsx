@@ -1,6 +1,6 @@
 
 'use client'
-import { useLanguage } from '@/context/languageContext';
+import { useLanguage } from '@/context/LanguageContext';
 import { Shield } from 'lucide-react';
 import Link from 'next/link';
 
