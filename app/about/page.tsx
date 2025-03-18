@@ -86,7 +86,35 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline Section */}
+      {/* Certification Section */}
+      <section className="py-24 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-white mb-4">Certificates and Accreditations            </h2>
+            <p className="text-gray-400 text-lg">
+            DAR SAS maintains the highest standards in security services through industry-recognized certifications and accreditations that validate our expertise and commitment to excellence.
+            </p>
+          </div>
+          <div className="space-y-8">
+            {[
+              { title: 'ISO 27001', description: 'Certified for Information Security Management Systems, ensuring we maintain rigorous controls for handling sensitive client information and security protocols.' },
+              {  title: 'ISO 9001:2015', description: 'Quality Management System certification demonstrating our commitment to consistent, high-quality security service delivery and continuous improvement.' },
+              {  title: 'ASIS International', description: 'Our security professionals hold Certified Protection Professional (CPP) and Physical Security Professional (PSP) designations from the leading security association worldwide.' },
+              { title:'National Security Accreditation', description: 'Licensed and authorized by relevant national security authorities to provide comprehensive security services across the kingdom.' },
+              { title:'PSARA Compliance', description: 'Fully compliant with Private Security Agencies Regulation Act requirements for professional security services delivery.' },
+              { title:'Industry Partnerships', description: 'Strategic partnerships with leading security technology providers ensuring access to the latest innovations in security solutions.' },
+            ].map((item, index) => (
+              <div key={index} className="flex items-center space-x-8">
+                <div className="flex-grow hover-lift card-gradient rounded-2xl p-8 card-border">
+                  <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
+                  <p className="text-gray-400">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">

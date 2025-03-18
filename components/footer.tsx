@@ -20,7 +20,7 @@ export function Footer() {
               <span className="font-bold text-xl">Dar Sas</span>
             </div>
             <p className="text-gray-400">
-              Providing professional security services and comprehensive protection solutions since 1995.
+              Providing professional security services and comprehensive protection solutions since 1990.
             </p>
           </div>
           
