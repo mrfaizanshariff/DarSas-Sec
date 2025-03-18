@@ -2,7 +2,7 @@ import { Shield, Users, Clock, Award, ChevronRight, Lock, Building, UserCheck, A
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
-import security from '../assets/security.png'
+import consulting from '../assets/consulting.png'
 
 export default function Home() {
   return (
@@ -186,7 +186,7 @@ export default function Home() {
             </div>
             <div className="relative h-[600px] rounded-2xl overflow-hidden animate-fade-in hover-scale">
               <Image
-                src={security.src}
+                src={consulting.src}
                 alt="Security professional"
                 fill
                 className="object-cover"

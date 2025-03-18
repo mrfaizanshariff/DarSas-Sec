@@ -12,7 +12,7 @@ const services = {
   'guarding-services': {
     title: 'Guarding Services',
     description: 'Our digitized guard services represent the seamless integration of elite human expertise with state-of-the-art security technology. We deploy meticulously trained security professionals equipped with advanced digital tools that dramatically enhance monitoring capabilities, facilitate instant communication, and enable sophisticated incident response protocols tailored to your specific security requirements.',
-    image: guarding.src,
+    image: consulting.src,
     features: [
       'Trained security personnel',
       '24/7 patrol services',
@@ -31,7 +31,7 @@ const services = {
   'digital-physical-security': {
     title: 'Digital/Physical Security',
     description: 'Our solutions include CCTV surveillance, access control, intrusion detection, scanning systems, IoT tracking, parking management, perimeter security, and integrated fire alarm systems.',
-    image: cctv.src,
+    image: consulting.src,
     features: [
       'Risk assessment',
       'Security system integration',
