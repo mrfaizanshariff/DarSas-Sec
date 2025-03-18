@@ -3,6 +3,7 @@
 import { useLanguage } from '@/context/LanguageContext';
 import { Shield } from 'lucide-react';
 import Link from 'next/link';
+import Logo from '../assets/Logo.png'
 
 export function Footer() {
   const { t } = useLanguage();
@@ -14,8 +15,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Shield className="h-8 w-8 text-[#eb4034]" />
-              <span className="font-bold text-xl">Darsas</span>
+              {/* <Shield className="h-8 w-8 text-[#eb4034]" /> */}
+              <img className='h-14 w-14' src={Logo.src} alt="Dar Sas" />
+              <span className="font-bold text-xl">Dar Sas</span>
             </div>
             <p className="text-gray-400">
               Providing professional security services and comprehensive protection solutions since 1995.
@@ -35,10 +37,9 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><Link href="/services/Digital-security" className="text-gray-400 hover:text-white">Guarding Services</Link></li>
-              <li><Link href="/services/event-security" className="text-gray-400 hover:text-white">Event Security</Link></li>
-              <li><Link href="/services/surveillance" className="text-gray-400 hover:text-white">Surveillance</Link></li>
-              <li><Link href="/services/security-consulting" className="text-gray-400 hover:text-white">Security Consulting</Link></li>
+              <li><Link href="/services/guuarding-services" className="text-gray-400 hover:text-white">Guarding Services</Link></li>
+              <li><Link href="/services/digital-physical-security" className="text-gray-400 hover:text-white">Digital/Physical Security</Link></li>
+              <li><Link href="/services/security-consultation" className="text-gray-400 hover:text-white">Security Consulting</Link></li>
             </ul>
           </div>
           
@@ -47,7 +48,7 @@ export function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li>Prince Abdulaziz Ibn Musaid Ibn Jalawi St</li>
               <li>Al Murabba, Riyadh, Saudi Arabia</li>
-              <li>Phone: +966 123 456 789</li>
+              <li>Phone: +966 920011308</li>
               <li>Email: info@darsas.sa</li>
             </ul>
           </div>

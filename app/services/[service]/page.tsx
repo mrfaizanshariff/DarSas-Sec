@@ -5,31 +5,31 @@ import { RadarAnimation } from '@/components/radar-animation';
 import { CircuitLines } from '@/components/circuit-lines';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-
+import cctv from '../../../assets/cctv.png'
 const services = {
   'guarding-services': {
     title: 'Guarding Services',
-    description: 'Professional security guards and patrol services.',
-    image: 'https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&q=80',
+    description: 'Our digitized guard services represent the seamless integration of elite human expertise with state-of-the-art security technology. We deploy meticulously trained security professionals equipped with advanced digital tools that dramatically enhance monitoring capabilities, facilitate instant communication, and enable sophisticated incident response protocols tailored to your specific security requirements.',
+    image: cctv.src,
     features: [
       'Trained security personnel',
       '24/7 patrol services',
       'Access control management',
-      'Emergency response',
-      'Visitor management',
-      'Security audits'
+      'Rapid response',
+      'Digital Integration',
+      'Comprehensive Reporting'
     ],
     benefits: [
-      'Enhanced premises security',
-      'Deterrence of criminal activity',
-      'Quick incident response',
-      'Professional security presence'
+      'Smart Patrol',
+      'Guard Management',
+      'Compliance Reporting',
+      'Remote Monitoring'
     ]
   },
   'digital-physical-security': {
     title: 'Digital/Physical Security',
-    description: 'Comprehensive security solutions for businesses.',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80',
+    description: 'Our solutions include CCTV surveillance, access control, intrusion detection, scanning systems, IoT tracking, parking management, perimeter security, and integrated fire alarm systems.',
+    image: cctv.src,
     features: [
       'Risk assessment',
       'Security system integration',
@@ -39,23 +39,22 @@ const services = {
       'Asset protection'
     ],
     benefits: [
-      'Protected business assets',
-      'Secure work environment',
-      'Regulatory compliance',
-      'Business continuity'
+      'System Design',
+      'Technology Supply',
+      'Integration',
+      'Monitoring'
     ]
   },
 
   'security-consultation': {
     title: 'Protective Security & Consultation',
-    description: 'Expert security planning and strategy.',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80',
+    description: 'Our consulting services provide strategic expertise to address complex security challenges. We develop customized security policies, manage high-profile events, deliver specialized training, and implement tailored technology solutions.',
+    image: cctv.src,
     features: [
-      'Security assessment',
-      'Strategy development',
-      'Policy creation',
-      'Staff training',
-      'Compliance guidance',
+      'Policy Development',
+      'Access Control',
+      'Threat Intelligence',
+      'VIP Protection',
       'Technology consulting'
     ],
     benefits: [

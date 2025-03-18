@@ -90,7 +90,9 @@ export function Navbar() {
                     : 'bg-white text-[#eb4034] hover:bg-gray-100'
                 }`}
               >
+               <Link href="/contact">
                Get Started
+               </Link>
               </Button>
               {/* <Button
                 variant="ghost"

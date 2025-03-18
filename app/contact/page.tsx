@@ -90,8 +90,8 @@ export default function ContactPage() {
                 {
                   icon: Phone,
                   title: 'Phone',
-                  content: '+966 123 456 789',
-                  href: 'tel:+966123456789'
+                  content: '+966 920011308',
+                  href: 'tel:+966920011308'
                 },
                 {
                   icon: Mail,
