@@ -56,7 +56,7 @@ export default function AboutPage() {
             {[
               { icon: Users, number: '1000+', label: 'Security Professionals' },
               { icon: Clock, number: '24/7', label: 'Monitoring Center' },
-              { icon: Shield, number: '500+', label: 'Active Clients' },
+              { icon: Shield, number: '50+', label: 'Active Clients' },
               { icon: Award, number: '30+', label: 'Years Experience' },
             ].map((stat, index) => (
               <div key={index} className="hover-lift card-gradient rounded-2xl p-8 card-border text-center">

@@ -66,7 +66,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: '500+', label: 'Clients Protected' },
+              { number: '50+', label: 'Clients Protected' },
               { number: '1000+', label: 'Security Staff' },
               { number: '24/7', label: 'Monitoring' },
               { number: '30+', label: 'Years Experience' },
@@ -138,6 +138,51 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* services section */}
+      <section className="py-32 bg-gradient-to-b from-black to-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-slide-up">
+            <h2 className="text-4xl font-bold text-white mb-4 text-glow">
+            Certificates and Accreditations
+            </h2>
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            DAR SAS maintains the highest standards in security services through industry-recognized certifications and accreditations that validate our expertise and commitment to excellence.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { title: 'ISO 27001', description: 'Certified for Information Security Management Systems, ensuring we maintain rigorous controls for handling sensitive client information and security protocols.' },
+              {  title: 'ISO 9001:2015', description: 'Quality Management System certification demonstrating our commitment to consistent, high-quality security service delivery and continuous improvement.' },
+              {  title: 'ASIS International', description: 'Our security professionals hold Certified Protection Professional (CPP) and Physical Security Professional (PSP) designations from the leading security association worldwide.' },
+              { title:'National Security Accreditation', description: 'Licensed and authorized by relevant national security authorities to provide comprehensive security services across the kingdom.' },
+              { title:'PSARA Compliance', description: 'Fully compliant with Private Security Agencies Regulation Act requirements for professional security services delivery.' },
+              { title:'Industry Partnerships', description: 'Strategic partnerships with leading security technology providers ensuring access to the latest innovations in security solutions.' },
+            ].map((service, index) => (
+              <div
+                key={index}
+                className="group hover-lift card-gradient rounded-2xl p-8 card-border"
+              >
+                <div className="mb-6 relative">
+                  <div className="absolute inset-0 bg-[#eb4034]/20 rounded-full filter blur-xl group-hover:blur-2xl transition-all duration-300" />
+                  {/* <service.icon className="relative h-12 w-12 text-[#eb4034] animate-glow" /> */}
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
+                <p className="text-gray-400 mb-6">{service.description}</p>
+                {/* <Link
+                  href={service.link}
+                  className="inline-flex items-center text-[#eb4034] font-semibold group-hover:translate-x-2 transition-transform duration-300"
+                >
+                  Learn More
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link> */}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       {/* Features Grid */}
       <section className="py-32 bg-black relative overflow-hidden">

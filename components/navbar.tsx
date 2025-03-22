@@ -44,13 +44,13 @@ export function Navbar() {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
       isScrolled ? 'bg-[#421b1b] shadow-md' : 'bg-transparent'
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+      <div className="max-w-8xl py-1 mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-[8rem]">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               {/* <Shield className={`h-8 w-8 ${isScrolled ? 'text-[#eb4034]' : 'text-white'}`} /> */}
               <span className={`font-bold text-xl text-white`}>
-                <img className='h-14 w-14' src={Logo.src} alt="Dar Sas" />
+                <img className='h-28  w-28' src={Logo.src} alt="Dar Sas" />
               </span>
             </Link>
           </div>
@@ -62,7 +62,7 @@ export function Navbar() {
                 <div key={item.name} className="relative group">
                   <Link
                     href={item.href}
-                    className={`flex items-center space-x-1  hover:text-[#eb4034] text-white px-3 py-2 text-sm font-medium transition-colors`}
+                    className={`flex items-center space-x-1  hover:text-[#eb4034] text-white px-3 py-2 text-md font-medium transition-colors`}
                   >
                     <span>{item.name}</span>
                     {item.hasDropdown && <ChevronDown className="h-4 w-4" />}
@@ -74,7 +74,7 @@ export function Navbar() {
                           <Link
                             key={dropdownItem.name}
                             href={dropdownItem.href}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                            className="block px-4 py-2 text-md text-gray-700 hover:bg-gray-100"
                           >
                             {dropdownItem.name}
                           </Link>
@@ -84,7 +84,7 @@ export function Navbar() {
                   )}
                 </div>
               ))}
-              <Button 
+              {/* <Button 
                 className={`${
                   isScrolled 
                     ? 'bg-[#eb4034] hover:bg-[#d63027] text-white' 
@@ -94,8 +94,8 @@ export function Navbar() {
                <Link href="/contact">
                Get Started
                </Link>
-              </Button>
-              {/* <Button
+              </Button> */}
+              <Button
                 variant="ghost"
                 size="icon"
                 onClick={toggleLanguage}
@@ -103,21 +103,21 @@ export function Navbar() {
               >
                 <Globe className="h-5 w-5" />
                 <span className="ml-2">{language.toUpperCase()}</span>
-              </Button> */}
+              </Button>
             </div>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-          {/* <Button
+          <Button
               variant="ghost"
               size="icon"
               onClick={toggleLanguage}
-              className={`text-white hover:text-[#eb4034]`}
+              className={`text-white p-1 hover:text-[#eb4034]`}
             >
               <Globe className="h-5 w-5" />
               <span className="ml-2">{language.toUpperCase()}</span>
-            </Button> */}
+            </Button>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`inline-flex items-center justify-center p-2 rounded-md text-white hover:text-[#eb4034]`}
@@ -160,9 +160,9 @@ export function Navbar() {
                   )}
                 </div>
               ))}
-              <Button className="w-full bg-[#eb4034] hover:bg-[#d63027] text-white mt-4">
+              {/* <Button className="w-full bg-[#eb4034] hover:bg-[#d63027] text-white mt-4">
                 Get Started
-              </Button>
+              </Button> */}
             </div>
           </div>
         )}
