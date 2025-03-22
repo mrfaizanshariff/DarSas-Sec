@@ -1,8 +1,9 @@
-import { Shield, Users, Clock, Award, ChevronRight, Lock, Building, UserCheck, ArrowRight, Smile, MapPin } from 'lucide-react';
+import { Shield, Users, Clock, Award, ChevronRight, Lock, Building, UserCheck, ArrowRight, Smile, MapPin, ShieldCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
 import consulting from '../assets/consulting.png'
+import ParticleNetwork from '@/components/particles';
 
 export default function Home() {
   return (
@@ -59,10 +60,12 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-black relative overflow-hidden">
+      <section className="py-10 bg-black relative overflow-hidden">
+        
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[#eb4034]/10 mix-blend-overlay" />
         </div>
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -81,8 +84,12 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-32 bg-gradient-to-b from-black to-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-32 bg-gradient-to-b from-black to-gray-900 relative">
+      <div className='absolute left-0 h-full w-full hidden md:block'>
+        <ParticleNetwork/>
+
+        </div>
+        <div className="max-w-7xl relative z-2 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-slide-up">
             <h2 className="text-4xl font-bold text-white mb-4 text-glow">
               Comprehensive Security Solutions
@@ -166,7 +173,7 @@ export default function Home() {
               >
                 <div className="mb-6 relative">
                   <div className="absolute inset-0 bg-[#eb4034]/20 rounded-full filter blur-xl group-hover:blur-2xl transition-all duration-300" />
-                  {/* <service.icon className="relative h-12 w-12 text-[#eb4034] animate-glow" /> */}
+                  <Award className="relative h-12 w-12 text-[#eb4034] animate-glow" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
                 <p className="text-gray-400 mb-6">{service.description}</p>
@@ -182,7 +189,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
 
       {/* Features Grid */}
       <section className="py-32 bg-black relative overflow-hidden">
