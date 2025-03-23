@@ -85,10 +85,10 @@ export default function Home() {
 
       {/* Services Section */}
       <section className="py-32 bg-gradient-to-b from-black to-gray-900 relative">
-      <div className='absolute left-0 h-full w-full hidden md:block'>
+      {/* <div className='absolute left-0 h-full w-full hidden md:block'>
         <ParticleNetwork/>
 
-        </div>
+        </div> */}
         <div className="max-w-7xl relative z-2 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-slide-up">
             <h2 className="text-4xl font-bold text-white mb-4 text-glow">
